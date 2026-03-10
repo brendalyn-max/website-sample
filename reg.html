@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="reg.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div><a href="#">Dashboard</a></div>
+        <div><a href="#">Supplier management</a></div>
+        <div><a href="#">stock</a></div>
+        <div><a href="#">Sales</a></div>
+      </div>
+      <div class="content">
+        <form action="">
+          <!----section1-->
+          <section>
+            <h1>Sales Registration</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="sales date">sales date</label>
+                <input type="date" />
+              </div>
+              <div class="input-section">
+                 <label for="sales person">sales person</label>
+              <select name="" id="">
+                <option value="">select a representative</option>
+                <option value="1">sales person</option>
+                <option value="2">manager</option>
+                <option value="3">stock personel</option>
+                <option value="4">Cashier</option>
+              </div>
+              
+              </select>
+            </div>
+          </section>
+          <!----section 2-->
+          <section>
+            <h1>Customer Details</h1>
+            <div class="input-container">
+            <div class="input-section">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Enter Ful Name" required />
+              <label for="phone number">Phone number</label>
+              <input type="number" placeholder="+256" required>
+            </div>
+            </div>
+          </section>
+        </form>
+      </div>
+      <div class="column"></div>
+    </div>
+  </body>
+</html>
