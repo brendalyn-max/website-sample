@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form 2</title>
+    <link rel="stylesheet" href="regn.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="profile">
+            <div class="profile2"></div>
+            <div class="profile3">
+                <p>Full Name</p>
+                <p>Role in the system</p>
+            </div>
+        </div>
+        <div><a href="#">Dashboard</a></div>
+        <div><a href="#">Stock</a></div>
+        <div><a href="#">Sales</a></div>
+        <div><a href="#">Login</a></div>
+        <div><a href="#">Reports</a></div>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <form action="">
+          <!-- Sales Registration -->
+          <section>
+            <h1>Sales Registration</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="sales-date">Sales Date</label>
+                <input type="date" id="sales-date" required />
+              </div>
+              <div class="input-section">
+                <label for="sales-person">Sales Person</label>
+                <select id="sales-person" required>
+                  <option>Manager</option>
+                  <option>Sales Person</option>
+                  <option>Stock Manager</option>
+                  <option>Cashier</option>
+                  <option>Select Representative</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <!-- Customer Details -->
+          <section>
+            <h1>Customer Details</h1>
+            <!-- First row -->
+            <div class="input-container">
+              <div class="input-section">
+                <label for="cust-name">Full Name</label>
+                <input type="text" id="cust-name" placeholder="Full Name" required />
+              </div>
+              <div class="input-section">
+                <label for="cust-phone">Phone Number</label>
+                <input type="tel" id="cust-phone" placeholder="+256" required />
+              </div>
+            </div>
+            <!-- Second row -->
+            <div class="input-container">
+              <div class="input-section">
+                <label for="cust-email">Email</label>
+                <input type="email" id="cust-email" placeholder="Enter email" required />
+              </div>
+              <div class="input-section">
+                <label for="cust-type">Customer Type</label>
+                <select id="cust-type" required>
+                  <option>Cash</option>
+                  <option>Credit</option>
+                  <option>Retail</option>
+                  <option>Supplier</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <!-- Items -->
+          <section>
+            <h1>Items</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="prdt1">Product</label>
+                <input type="text" id="prdt1" required />
+              </div>
+              <div class="input-section">
+                <label for="qty1">Quantity</label>
+                <input type="text" id="qty1" required />
+              </div>
+              <div class="input-section">
+                <label for="price1">Unit Price</label>
+                <input type="text" id="price1" required />
+              </div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-section">
+                <label for="prdt2">Product</label>
+                <input type="text" id="prdt2" required />
+              </div>
+              <div class="input-section">
+                <label for="qty2">Quantity</label>
+                <input type="text" id="qty2" required />
+              </div>
+              <div class="input-section">
+                <label for="price2">Unit Price</label>
+                <input type="text" id="price2" required />
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button">
+              <button type="reset">Cancel</button>
+              <button type="submit">Submit</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
