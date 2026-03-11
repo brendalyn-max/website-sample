@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supplier Registration</title>
+    <link rel="stylesheet" href="regn.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="profile">
+          <div class="profile2"></div>
+          <div class="profile3">
+            <p>Full Name</p>
+            <p>Role in the system</p>
+          </div>
+        </div>
+        <div><a href="#">Dashboard</a></div>
+        <div><a href="#">Stock</a></div>
+        <div><a href="regn.html">Sales</a></div>
+        <div><a href="#">Login</a></div>
+        <div><a href="#">Reports</a></div>
+        <div><a href="supplier-reg.html">Supplier</a></div>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <form action="">
+          <!-- Supplier Information -->
+          <section>
+            <h1>Supplier Information</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="supplier-name">Supplier Name</label>
+                <input
+                  type="text"
+                  id="supplier-name"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <div class="input-section">
+                <label for="supplier-id">Supplier ID</label>
+                <input type="text" id="supplier-id" placeholder="ID" required />
+              </div>
+              <div class="input-section">
+                <label for="reg-date">Registration Date</label>
+                <input type="date" id="reg-date" required />
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact Details -->
+          <section>
+            <h1>Contact Details</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="contact-person">Contact Person</label>
+                <input
+                  type="text"
+                  id="contact-person"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <div class="input-section">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+256" required />
+              </div>
+            </div>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+              <div class="input-section">
+                <label for="location">Location</label>
+                <input
+                  type="text"
+                  id="location"
+                  placeholder="Enter location"
+                  required
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- Business Details -->
+          <section>
+            <h1>Business Details</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="company-name">Company Name</label>
+                <input type="text" id="company-name" required />
+              </div>
+              <div class="input-section">
+                <label for="business-type">Business Type</label>
+                <select id="business-type" required>
+                  <option value="">Select type</option>
+                  <option value="manufacturer">Manufacturer</option>
+                  <option value="distributor">Distributor</option>
+                  <option value="retailer">Retailer</option>
+                  <option value="supplier">Supplier</option>
+                </select>
+              </div>
+              <div class="input-section">
+                <label for="tax-id">Tax ID</label>
+                <input type="text" id="tax-id" required />
+              </div>
+            </div>
+          </section>
+
+          <!-- Supply Details -->
+          <section>
+            <h1>Supply Details</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="prdt-type">Product Type</label>
+                <select id="prdt-type" required>
+                  <option value="">Select product</option>
+                  <option value="cement">Cement</option>
+                  <option value="tiles">Tiles</option>
+                  <option value="steel">Steel</option>
+                  <option value="paint">Paint</option>
+                  <option value="timber">Timber</option>
+                  <option value="plumbing">Plumbing Materials</option>
+                </select>
+              </div>
+              <div class="input-section">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" required>
+                  <option value="">Select payment method</option>
+                  <option value="cash">Cash</option>
+                  <option value="credit">Credit</option>
+                  <option value="mobile-money">Mobile Money</option>
+                  <option value="bank-transfer">Bank Transfer</option>
+                </select>
+              </div>
+              <div class="input-section">
+                <label for="delivery-terms">Delivery Terms</label>
+                <select id="delivery-terms" required>
+                  <option value="">Select delivery terms</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="on-order">On Order</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <!-- Buttons -->
+          <div class="button">
+            <button type="reset">Cancel</button>
+            <button type="submit">Register Supplier</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
